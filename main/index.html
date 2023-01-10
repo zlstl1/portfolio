@@ -79,7 +79,7 @@
 <!--								</section>-->
 
 							<!-- Section -->
-								<section>
+								<section id="main-content">
 									<header class="major">
 										<h2>Ipsum sed dolor</h2>
 									</header>
@@ -155,6 +155,7 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
+										<li><a href="index.html">Overview</a></li>
 										<li>
 											<span class="opener">AI</span>
 											<ul>
@@ -239,6 +240,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				$(document).ready(function () {
+					$(document).on("click", ".logo", function () {
+						$("#main-content").empty()
+						$("#main-content").load("content/main.html");
+					});
+					$(document).on("click", ".fa-github", function () {
+						$("#main-content").empty()
+						$("#main-content").load("content/main2.html");
+					});
+				});
+			</script>
 
 	</body>
 </html>
