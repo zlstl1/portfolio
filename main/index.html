@@ -6,6 +6,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#menu").load("menu.html")
+			});
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -193,26 +205,5 @@
 					</div>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				$(document).ready(function () {
-					$(document).on("click", ".logo", function () {
-						$("#main-content").empty()
-						$("#main-content").load("content/main.html");
-					});
-					$(document).on("click", ".fa-github", function () {
-						$("#main-content").empty()
-						$("#main-content").load("content/main2.html");
-					});
-					$("#menu").panel('refresh', 'menu.html')
-				});
-			</script>
-
 	</body>
 </html>
