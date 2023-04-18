@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-  <title>AI/GPGPU - 신종 감염병 해외유입 예측 및 지능적 차단 기술개발</title>
+  <title>AI/GPGPU - AI기반 해양 정찰 시스템 구축 실증 용역</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="../assets/css/main.css" />
@@ -32,25 +32,28 @@
       <!-- Content -->
       <section>
         <header class="main">
-          <h1>신종 감염병 해외유입 예측 및 지능적 차단 기술개발</h1>
+          <h1>AI기반 해양 정찰 시스템 구축 실증 용역</h1>
         </header>
 
         <hr class="major" />
 
         <h2>과제요약</h2>
-        <p>과제 기간 : 2021.04.01 ~ 2023.12.31</p>
+        <p>과제 기간 : 2022.10.24 ~ 2022.12.31</p>
         <p>Github : <a href="https://github.com/zlstl1/thermalcamera">https://github.com/zlstl1/thermalcamera</a></p>
-        <p>주요기술 : Android, Python, Pytorch, JAVA</p>
-        <p>주요기능 : COVID-19와 같은 신종감염병의 선제적 대응을 위하여 고발열자, 마스크 미/오착용자 탐지 기능 제공</p>
+        <p>주요기술 : Python, Pytorch, PyQT, Labelme</p>
+        <p>주요기능 : 기존의 해안정찰의 경우 정찰선을 이용한 방법으로 인한 선박의 유지비용, 많은 인력투입 등으로 비용적 문제 발생하여 이를 드론을 통한 정찰을 수행하고 드론을 통해 촬영된 영상을 인공지능 기반의 영상 분석을 통해 관제사의 능률 향상 도모</p>
 
         <hr class="major" />
 
         <h2>수행업무</h2>
         <p>
-          행정안전부 주관의 사업으로 COVID-19와 같은 신종감염병의 선제적 대응을 위한 시스템 개발 사업 수행</br>
-          총 6개의 기관이 협업하여 100여개국 웹 크롤링, 크롤링 데이터 NLP를 통한 감염병 위험도 분석, 방역 터널 및 수화물 소독 장치 개발, 무인 민원 로봇 개발, 인공지능 기반 열화상 카메라 모듈 개발을 각각 수행하였으며 저희 기관은 인공지능 기반 열화상 카메라 모듈 개발 수행</br>
-          열화상 카메라 모듈은 RGB/IR 이미지를 촬영하는 열화상 카메라와 이미지를 전처리하는 Android 보드를 결합하여 수집된 이미지를 서버 PC로 전달하고 서버 PC는 이를 인공지능 모델을 통해 안면검출, 안면 영역의 온도값 산정, 마스크 착용/오착용/미착용 검출을 수행하여 고발열자 또는 마스크 오착용/미착용자 발생 시 모니터링 페이지로 이벤트 전달</br>
-          담당업무 : 열화상 카메라 모듈의 Android 앱 개발, 안면 검출/마스크 검출 모델 학습</p>
+          부산테크노파크 주관의 사업으로 실제 부산 소재의 명지, 이기대, 장산 인근에서 드론을 통한 촬영으로 영상 및 이미지를 획득하여 모델을 학습하고 영상 분석 프로그램 개발</br>
+          해양 정찰을 위하여 사람, 자동차, 선박 3개의 객체와 SOS 수신호, 낙상 2가지의 액션을 라벨링을 통해 직접 데이터를 수집하고 가공하여 데이터셋 구축</br>
+          구축된 데이터셋을 Yolo 기반의 실시간 처리가 가능한 모델 개발 및 학습</br>
+          PyQT를 이용하여 모니터링 프로그램을 개발하며 NAS로부터 드론을 통해 촬영된 영상을 불러와 주기적인 배치작업을 통해 통계 정보를 표출하는 기능 제공
+          담당업무 : 라벨링 툴 커스터마이징 및 데이터 라벨링, 객체 탐지 모델 개발 및 학습, PyQT를 이용한 모니터링 프로그램 개발
+          </p>
+
         <hr class="major" />
 
         <h2>ScreenShot</h2>
@@ -60,7 +63,6 @@
           <div><span class="image main"><img src="images/img002.PNG" alt="" /></span></div>
           <div><span class="image main"><img src="images/img003.PNG" alt="" /></span></div>
           <div><span class="image main"><img src="images/img004.PNG" alt="" /></span></div>
-          <div><span class="image main"><img src="images/img005.PNG" alt="" /></span></div>
         </div>
 
         </section>
